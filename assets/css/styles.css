@@ -1,0 +1,146 @@
+/*General Styles*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*Header Styles*/
+header{
+    width: 100%;
+    height: 250px;
+    background-image: url("/images/pattern-bg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.ipInputContainer{
+    margin: 20px auto;
+    width: 40%;
+    height: 40px;
+    display: flex;
+}
+
+.ipInputContainer > .ipInput{
+    flex: 9;
+    border: none;
+    padding: 0px 10px;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+}
+
+.ipInputContainer > .btnSearch{
+    flex: 1;
+    border: none;
+    background-color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+header > h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 35px;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width:768px){
+    .ipInputContainer{
+        
+        width: 80%;
+        height: 40px;
+    }
+}
+/*Map Styles*/
+
+#ipMap{
+    width: 100%;
+    height: 450px;
+}
+
+/* IP Address Container Styles*/
+
+.container{
+    width: 95%;
+    height: 125px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:180px;
+    left: 2.5%;
+    z-index: 999;
+    border-radius: 10px;
+    padding: 20px 15px;
+    
+}
+
+.addressElement{
+    border-right: 1px solid gray;
+    flex: 5;
+    text-align:left ;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.addressElement:last-child{
+    border: none;
+}
+.title{
+    color: gray;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.result{
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width:1040px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .addressElement{
+        border: none;
+        align-items: center;
+    }
+
+    .title{
+        margin-bottom: 10px;
+    }
+
+    .result{
+        margin-bottom: 25px;
+    }
+    
+}
+
+/*Footer styles*/
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #4743a0;
+}
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+.attribution a {
+    color: #fff;
+}
